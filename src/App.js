@@ -1,9 +1,9 @@
 import React from 'react';
 import { Redirect, Route, HashRouter as Router } from 'react-router-dom';
 import Nav from './Nav';
-import Contact from './Contact';
-import Home from './Home';
-import NotFound from './NotFound';
+import Contact from './views/Contact';
+import Home from './views/Home';
+import NotFound from './views/NotFound';
 import { Switch } from 'react-router-dom';
 
 function App() {
