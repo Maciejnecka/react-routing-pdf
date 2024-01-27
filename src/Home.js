@@ -19,7 +19,8 @@ const Home = () => {
   }, []);
   return (
     <section>
-      <h2>Home</h2>;{paragraph}
+      <h2>Home</h2>
+      {paragraph}
     </section>
   );
 };

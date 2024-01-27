@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, HashRouter as Router } from 'react-router-dom';
+import { Redirect, Route, HashRouter as Router } from 'react-router-dom';
 import Nav from './Nav';
 import Contact from './Contact';
 import Home from './Home';
@@ -14,14 +14,18 @@ function App() {
         <Nav />
       </nav>
       <Switch>
+        <Redirect from="/beta" to="/" />
         <Route exact path="/">
           <Home />
         </Route>
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route>
+        <Route path="/404.html">
           <NotFound />
+        </Route>
+        <Route>
+          <Redirect to="/404.html" />
         </Route>
       </Switch>
     </Router>

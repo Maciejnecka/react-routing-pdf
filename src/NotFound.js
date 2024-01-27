@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
-const NotFound = () => {
+const NotFound = ({ redirectToHome = false }) => {
+  if (redirectToHome) {
+    return <Redirect to="/" />;
+  }
   return (
     <>
       <p>
