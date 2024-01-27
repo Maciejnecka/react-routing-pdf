@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Home from './Home';
-
-const Contact = () => <h2>Contact</h2>;
+import Contact from './Contact';
 
 function App() {
   const [time, setTime] = useState(0);

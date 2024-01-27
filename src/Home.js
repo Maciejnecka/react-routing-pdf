@@ -1,11 +1,27 @@
 import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
+  const { state = {} } = useLocation();
+
+  const paragraph =
+    state && state.fromContact ? (
+      <p>Witamy ponownie!</p>
+    ) : (
+      <p>
+        Idź do <Link to="/contact">??</Link>!
+      </p>
+    );
+
   useEffect(() => {
     console.log('zamontowany');
     return () => console.log('odmontowany');
   }, []);
-  return <h2>Home</h2>;
+  return (
+    <section>
+      <h2>Home</h2>;{paragraph}
+    </section>
+  );
 };
 
 export default Home;
