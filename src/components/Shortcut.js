@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 class Shortcut extends React.Component {
   state = {
@@ -11,6 +12,10 @@ class Shortcut extends React.Component {
     });
   };
   render() {
+    const { redirect } = this.state;
+    if (redirect) {
+      return <Redirect to={redirect} />;
+    }
     return (
       <select onChange={this.handleChange}>
         <option value="">Wybierz stronę</option>

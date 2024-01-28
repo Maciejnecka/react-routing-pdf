@@ -16,6 +16,11 @@ const Nav = () => {
           Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName={activeClass} to="/404.html">
+          NotFound
+        </NavLink>
+      </li>
     </ul>
   );
 };
