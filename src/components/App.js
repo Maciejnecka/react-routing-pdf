@@ -7,6 +7,9 @@ import NotFound from '../views/NotFound';
 import { Switch } from 'react-router-dom';
 import Category from '../views/Category';
 import Article from '../views/ArticlePage';
+import PrivateRoute from '../PrivateRoute';
+import Admin from '../views/Admin';
+import Login from '../views/Login';
 
 function App() {
   return (
@@ -16,6 +19,12 @@ function App() {
         <Nav />
       </nav>
       <Switch>
+        <PrivateRoute path="/admin">
+          <Admin />
+        </PrivateRoute>
+        <Route path="/login">
+          <Login />
+        </Route>
         <Redirect from="/beta" to="/" />
         <Route exact path="/">
           <Home />

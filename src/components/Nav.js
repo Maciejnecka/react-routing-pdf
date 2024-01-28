@@ -21,6 +21,11 @@ const Nav = () => {
           Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName={activeClass} to="/admin">
+          Admin
+        </NavLink>
+      </li>
     </ul>
   );
 };
