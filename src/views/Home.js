@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
-  const { state = {} } = useLocation();
+  const { state } = useLocation();
+
+  useEffect(() => {
+    console.log('zamontowany');
+    return () => console.log('odmontowany');
+  }, []);
 
   const paragraph =
     state && state.fromContact ? (
@@ -13,10 +18,6 @@ const Home = () => {
       </p>
     );
 
-  useEffect(() => {
-    console.log('zamontowany');
-    return () => console.log('odmontowany');
-  }, []);
   return (
     <section>
       <h2>Home</h2>

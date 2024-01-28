@@ -6,16 +6,18 @@ class Shortcut extends React.Component {
     redirect: null,
   };
 
-  handleChange = (e) => {
+  handleChange = (event) => {
     this.setState({
-      redirect: e.target.value,
+      redirect: event.target.value,
     });
   };
+
   render() {
     const { redirect } = this.state;
     if (redirect) {
       return <Redirect to={redirect} />;
     }
+
     return (
       <select onChange={this.handleChange}>
         <option value="">Wybierz stronę</option>

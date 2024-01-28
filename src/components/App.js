@@ -6,7 +6,7 @@ import Home from '../views/Home';
 import NotFound from '../views/NotFound';
 import { Switch } from 'react-router-dom';
 import Category from '../views/Category';
-import Article from '../views/Article';
+import Article from '../views/ArticlePage';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
         <Route path="/article/:id-:alias">
           <Article />
         </Route>
+        {/* ... */}
         <Route path="/404.html">
           <NotFound />
         </Route>

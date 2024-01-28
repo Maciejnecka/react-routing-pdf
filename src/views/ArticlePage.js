@@ -1,17 +1,16 @@
 import React from 'react';
-import { Redirect, useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 
 import articles from './../data/articles.json';
-
-const Article = () => {
+const ArticlePage = () => {
   const { id, alias } = useParams();
   const [article = null] = articles.filter((art) => art.id === parseInt(id));
 
   if (article === null) {
     return <Redirect to="/404.html" />;
   }
-  const { title, intro } = article;
 
+  const { title, intro } = article;
   return (
     <article data-id={id} data-alias={alias}>
       <h1>{title}</h1>
@@ -20,4 +19,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default ArticlePage;

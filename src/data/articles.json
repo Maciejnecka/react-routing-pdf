@@ -2,16 +2,19 @@
   {
     "id": 1,
     "title": "Artykuł nr 1",
-    "intro": "Vivamus iaculis ultrices ex id..."
+    "intro": "Vivamus iaculis ultrices ex id...",
+    "categories": [1, 2]
   },
   {
     "id": 2,
     "title": "Artykuł nr 2",
-    "intro": "Ellentesque mollis maximus nisl..."
+    "intro": "Ellentesque mollis maximus nisl...",
+    "categories": [1, 2]
   },
   {
     "id": 3,
     "title": "Artykuł nr 3",
-    "intro": "Estibulum lectus nulla, fermentum..."
+    "intro": "Estibulum lectus nulla, fermentum...",
+    "categories": [1]
   }
 ]

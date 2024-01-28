@@ -7,18 +7,8 @@ const Nav = () => {
   return (
     <ul>
       <li>
-        <NavLink activeStyle={activeStyle} exact to="/">
+        <NavLink exact activeStyle={activeStyle} to="/">
           Home
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName={activeClass} to="/contact">
-          Contact
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName={activeClass} to="/404.html">
-          NotFound
         </NavLink>
       </li>
       <li>
@@ -27,8 +17,8 @@ const Nav = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink activeClassName={activeClass} to="/article/:id-:alias-">
-          Article
+        <NavLink activeClassName={activeClass} to="/contact">
+          Contact
         </NavLink>
       </li>
     </ul>

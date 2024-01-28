@@ -3,12 +3,14 @@ import { useHistory } from 'react-router-dom';
 
 const ShortcutFn = () => {
   const history = useHistory();
-  const handleChange = (e) => {
-    history.push(e.target.value);
+
+  const handleChange = (event) => {
+    history.push(event.target.value);
   };
+
   return (
     <select onChange={handleChange}>
-      <option value="">Wybierz strone</option>
+      <option value="">Wybierz stronę</option>
       <option value="/">Home</option>
       <option value="/contact">Contact</option>
     </select>

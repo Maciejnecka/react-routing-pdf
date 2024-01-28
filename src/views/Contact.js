@@ -13,7 +13,7 @@ const Contact = () => {
     <section>
       <h2>Contact</h2>
       <p>
-        Idź do
+        Idź do{' '}
         <Link
           to={toHome}
           className="link"
