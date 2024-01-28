@@ -1,30 +1,41 @@
 import React from 'react';
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+const StyledLink = styled(NavLink)`
+  color: #444;
+  text-decoration: none;
+  &:hover {
+    color: red;
+  }
+  &.${(props) => props.activeClassName} {
+    border: 1px solid red;
+  }
+`;
+
 const Nav = () => {
-  const activeStyle = { border: '1px solid red' };
   const activeClass = 'active';
   return (
     <ul>
       <li>
-        <NavLink exact activeStyle={activeStyle} to="/">
+        <StyledLink exact activeClassName={activeClass} to="/">
           Home
-        </NavLink>
+        </StyledLink>
       </li>
       <li>
-        <NavLink activeClassName={activeClass} to="/category">
+        <StyledLink activeClassName={activeClass} to="/category">
           Category
-        </NavLink>
+        </StyledLink>
       </li>
       <li>
-        <NavLink activeClassName={activeClass} to="/contact">
+        <StyledLink activeClassName={activeClass} to="/contact">
           Contact
-        </NavLink>
+        </StyledLink>
       </li>
       <li>
-        <NavLink activeClassName={activeClass} to="/admin">
+        <StyledLink activeClassName={activeClass} to="/admin">
           Admin
-        </NavLink>
+        </StyledLink>
       </li>
     </ul>
   );
