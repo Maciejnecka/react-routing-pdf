@@ -6,6 +6,7 @@ import Home from '../views/Home';
 import NotFound from '../views/NotFound';
 import { Switch } from 'react-router-dom';
 import Category from '../views/Category';
+import Article from '../views/Article';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/category">
           <Category />
+        </Route>
+        <Route path="/article/:id-:alias">
+          <Article />
         </Route>
         <Route path="/404.html">
           <NotFound />

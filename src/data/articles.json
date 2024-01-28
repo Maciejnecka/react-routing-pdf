@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Artykuł nr 1",
+    "intro": "Vivamus iaculis ultrices ex id..."
+  },
+  {
+    "id": 2,
+    "title": "Artykuł nr 2",
+    "intro": "Ellentesque mollis maximus nisl..."
+  },
+  {
+    "id": 3,
+    "title": "Artykuł nr 3",
+    "intro": "Estibulum lectus nulla, fermentum..."
+  }
+]

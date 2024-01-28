@@ -26,6 +26,11 @@ const Nav = () => {
           Category
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName={activeClass} to="/article/:id-:alias-">
+          Article
+        </NavLink>
+      </li>
     </ul>
   );
 };
