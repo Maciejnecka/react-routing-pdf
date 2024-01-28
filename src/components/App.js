@@ -5,6 +5,7 @@ import Contact from '../views/Contact';
 import Home from '../views/Home';
 import NotFound from '../views/NotFound';
 import { Switch } from 'react-router-dom';
+import Category from '../views/Category';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/category">
+          <Category />
         </Route>
         <Route path="/404.html">
           <NotFound />

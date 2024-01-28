@@ -21,6 +21,11 @@ const Nav = () => {
           NotFound
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName={activeClass} to="/category">
+          Category
+        </NavLink>
+      </li>
     </ul>
   );
 };
